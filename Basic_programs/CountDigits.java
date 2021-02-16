@@ -1,6 +1,8 @@
+//Program to counts the Digits in the number.
 class CountDigits
 {
-	int count =0;
+
+	static int count =0;
 	public static int countDigitofNumber(int number)
 	{
 		while(number!=0)
@@ -13,8 +15,9 @@ class CountDigits
 public static void main(String args[])
 {
  int n=520;
- System.out.println(countDigit.countDigitofNumber(n));
+ System.out.println(CountDigits.countDigitofNumber(n));
 
 
 
+}
 }
