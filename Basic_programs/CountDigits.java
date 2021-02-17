@@ -12,12 +12,19 @@ class CountDigits
 		}
 		return count;
 	}
+//Using  Recursion
+	public static int recursiveCountDigits(int n){
+	if (n==0)
+		return 0;
+	else	
+		return 1+recursiveCountDigits(n/10);
+	}
 public static void main(String args[])
 {
  int n=520;
  System.out.println(CountDigits.countDigitofNumber(n));
-
-
+	
+ System.out.println(CountDigits.recursiveCountDigits(n));
 
 }
 }
